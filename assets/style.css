@@ -65,6 +65,8 @@ body {
     padding: 1rem;
     text-align: center;
     position: relative;
+    /* border: 1px solid black; */
+    /* animation: movetext 1s; */
 }
 
 .card-content .quotes {
@@ -110,6 +112,47 @@ body {
     bottom: 0;
 }
 
+@keyframes movetext {
+    0% {
+        left: -100px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 100%;
+    }
+}
+@keyframes movetext2 {
+    0% {
+        left: -100px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes moveimg {
+    0% {
+        /* right: -10px; */
+        opacity: 0;
+    }
+    100% {
+        /* right: 0; */
+        opacity: 100%;
+    }
+}
+@keyframes moveimg2 {
+    0% {
+        /* right: -10px; */
+        opacity: 0;
+    }
+    100% {
+        /* right: 0; */
+        opacity: 100%;
+    }
+}
 
 @media (min-width: 1300px) {
     .card {
@@ -136,6 +179,7 @@ body {
         top: -130px;
         position: absolute;
         right: 150px;
+        /* animation: moveimg 1s; */
     }
     .btn-container {
         left: 0;

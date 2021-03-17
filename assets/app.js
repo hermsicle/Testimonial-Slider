@@ -6,6 +6,7 @@ let userTestimonial = document.getElementById('testimonial')
 let userName = document.getElementById('name')
 let userRole = document.getElementById('role')
 let btns = document.querySelectorAll('.btns')
+let contentContainer = document.querySelector('.card-content')
 
 let position = 0
 
@@ -34,10 +35,11 @@ let john = {
 for(let i = 0; i < btns.length; i ++) {
     btns[i].addEventListener('click', () => {
         position++
-        // console.log(position)
         switch(position) {
             case 1: 
                 userImage.src = john.img
+                userImage.style.animation = 'moveimg linear 500ms'
+                contentContainer.style.animation = 'movetext linear 500ms'
                 userTestimonial.textContent = john.testimonial
                 userName.textContent = john.name
                 userRole.textContent = john.role
@@ -55,6 +57,8 @@ for(let i = 0; i < btns.length; i ++) {
         }
         if(position == 2) {
             position = 0
+            userImage.style.animation = 'moveimg2 linear 500ms'
+            contentContainer.style.animation = 'movetext2 linear 500ms'
         }
     })
 }

@@ -13,4 +13,4 @@ Users should be able to:
 
 
 ### Master
-Navigate to the master directory to view the challenge 
+Navigate to the master directory to view the challenge files
